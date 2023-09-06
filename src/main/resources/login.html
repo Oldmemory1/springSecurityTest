@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+   <form action="login" method="post">
+       <label>
+           userName:
+           <input name="username" type="text">
+       </label>
+       <label>
+           password:
+           <input name="password" type="password">
+       </label>
+       <button type="submit">login</button>
+   </form>
+<div th:if="${status}">
+    error with password/username
+</div>
+</body>
+</html>
